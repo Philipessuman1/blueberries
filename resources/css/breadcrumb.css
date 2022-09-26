@@ -1,0 +1,25 @@
+.breadcrumb li {
+  display: inline;
+  line-height: 30px;
+  height: 50px;
+}
+.breadcrumb li.location+li.location::before {
+  content: ">";
+  height: 30px;
+}
+.breadcrumb li a:hover {
+  color:blue;
+}
+.breadcrumb li.attribute a{
+  color: gray
+}
+.breadcrumb li.attribute a::after {
+  content: "x";
+  vertical-align: super;
+  color: darkgreen;
+}
+.breadcrumb li.location+li.attribute::before {
+  content: "x";
+  vertical-align: super;
+  color: darkgreen;
+}
